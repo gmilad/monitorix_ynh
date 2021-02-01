@@ -293,9 +293,9 @@ Developers infos
 
 To try the testing branch, please proceed like that.
 ```
-sudo yunohost app install https://github.com/YunoHost-Apps/monitorix_ynh/tree/testing --debug
+sudo yunohost app install https://github.com/gmilad/monitorix_ynh/tree/gmilad-patch-3.12-old-version --debug
 or
-sudo yunohost app upgrade monitorix -u https://github.com/YunoHost-Apps/monitorix_ynh/tree/testing --debug
+sudo yunohost app upgrade monitorix -u https://github.com/gmilad/monitorix_ynh/tree/gmilad-patch-3.12-old-version --debug
 ```
 
 License
