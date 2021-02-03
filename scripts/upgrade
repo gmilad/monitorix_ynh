@@ -42,9 +42,6 @@ ynh_abort_if_errors
 # STANDARD UPGRADE STEPS
 #=================================================
 
-# Removal the folder
-rm -fr /var/lib/monitorix/www/imgs/*
-
 # Install package
 ynh_script_progression --message="Installing dependencies..." --weight=6
 install_dependances
