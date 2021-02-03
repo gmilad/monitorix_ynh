@@ -42,6 +42,9 @@ ynh_abort_if_errors
 # STANDARD UPGRADE STEPS
 #=================================================
 
+# Removal the folder
+rm -fr /var/lib/monitorix/www/imgs
+
 # Creating the folder
 mkdir -p /var/lib/monitorix/www/imgs
 
