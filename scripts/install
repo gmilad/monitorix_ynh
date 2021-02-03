@@ -38,6 +38,9 @@ ynh_app_setting_set --app $app --key nginx_status_port --value $nginx_status_por
 # STANDARD MODIFICATIONS
 #=================================================
 
+# Creating the folder
+mkdir -p /var/lib/monitorix/www/imgs
+
 # Install package
 ynh_script_progression --message="Installing dependencies..." --weight=7
 install_dependances
