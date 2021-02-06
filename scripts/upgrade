@@ -49,6 +49,9 @@ mkdir -p /var/lib/monitorix/www/imgs
 ynh_script_progression --message="Installing dependencies..." --weight=6
 install_dependances
 
+# Delete the folder
+rm -fr /var/lib/monitorix/www/imgs
+
 # Download package and install it
 ynh_script_progression --message="Upgrading source files..." --weight=6
 get_install_source
