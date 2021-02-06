@@ -21,6 +21,9 @@ get_install_source() {
 	ynh_package_install -f
 }
 
+# Creating the folder
+mkdir -p /var/lib/monitorix/www/imgs
+
 config_nginx() {
     ynh_add_nginx_config
 
