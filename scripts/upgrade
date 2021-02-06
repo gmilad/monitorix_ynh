@@ -54,6 +54,11 @@ rm -fr /var/lib/monitorix/www/imgs
 
 # Download package and install it
 ynh_script_progression --message="Upgrading source files..." --weight=6
+
+# Creating the folder
+mkdir -p /var/lib/monitorix/www/imgs
+
+# Download package and install it
 get_install_source
 
 # Update nginx config
