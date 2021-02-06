@@ -18,11 +18,10 @@ get_install_source() {
 	ynh_package_update
 	dpkg --force-confdef --force-confold -i /tmp/app.deb
 	ynh_secure_remove --file=/etc/monitorix/conf.d/00-debian.conf
+	# Creating the folder
+	mkdir -p /var/lib/monitorix/www/imgs
 	ynh_package_install -f
 }
-
-# Creating the folder
-mkdir -p /var/lib/monitorix/www/imgs
 
 config_nginx() {
     ynh_add_nginx_config
